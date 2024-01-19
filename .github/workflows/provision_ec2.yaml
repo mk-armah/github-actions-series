@@ -55,7 +55,7 @@ jobs:
         id:   apply
         env:
           TF_VAR_ec2_name:  "${{ github.event.inputs.ec2_name }}"
-          TF_VAR_key_name: "${{ github.event.inputs.pem_key_name}}"
+          TF_VAR_pem_key_name: "${{ github.event.inputs.pem_key_name}}"
           TF_VAR_aws_region: "${{ secrets.TF_USER_AWS_REGION }}"
           TF_VAR_ec2_instance_type: "${{ github.event.inputs.ec2_instance_type}}"
         run: |
